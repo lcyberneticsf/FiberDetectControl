@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FiberDetectControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FiberDetectControlDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MagneticValve.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DetectParametersSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDetectParametersSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugParametersSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetWorkParameters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraParametersSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ValveParametersSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FiberDetectParametersSettting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParameterSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="communicator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VAsyncIO.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraCoreApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraEnum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraEnumPrivate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraMessage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraMessagePrivate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraMessageTrans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraProcessorApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraProcessorTypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VCameraSession.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VFC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VTx2Session.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Clog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ModeSelectDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgGetTrainImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="detect_recog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MeasureResultDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraSettingDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="label.pb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveDetectResult.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxSelect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FiberDetectControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FiberDetectControlDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MagneticValve.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DetectParametersSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDetectParametersSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugParametersSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWorkParameters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraParametersSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ValveParametersSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FiberDetectParametersSettting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParameterSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="communicator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VCameraFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VCameraMessage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VCameraMessageTrans.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VCameraProcessorTypes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Clog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ModeSelectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgGetTrainImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="detect_recog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scope.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MeasureResultDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraSettingDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="label.pb.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveDetectResult.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxSelect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FiberDetectControl.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\FiberDetectControl.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\FiberDetectControl.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Title.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Track.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
