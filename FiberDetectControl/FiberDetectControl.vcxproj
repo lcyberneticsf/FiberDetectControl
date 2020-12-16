@@ -114,7 +114,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>F:\aqrose工程\01经纬嵌入开发\软件开发\DataSimulator\asio;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include\opencv;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include\opencv2;D:\aqrose\02AIDI Develop\二次开发\二次开发资料\335\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\AIDI\TX2\JingweiFiberDetectSoftware\FiberDetectControl\asio;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include\opencv;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include\opencv2;D:\aqrose\02AIDI Develop\二次开发\二次开发资料\335\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/D _CRT_SECURE_NO_WARNINGS  /wd4146 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>

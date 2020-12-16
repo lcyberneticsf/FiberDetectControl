@@ -655,10 +655,12 @@ BOOL CFiberDetectControlDlg::OnInitDialog()
 	//run_tcp_img_show_server("192.168.1.11", 9005);//mode 0
 	OnBnClickedStartServer();  //Start a server to connect the AI-BOX;
 	//SetTimer(1, 2, nullptr);
+
 	GetDlgItem(IDC_CHECK_SERVER_MODE_SELECT)->EnableWindow(FALSE);
 	GetDlgItem(IDC_CHECK_MODE_SELECT)->EnableWindow(FALSE);
 	GetDlgItem(IDC_CHECK_SERVER_SEND)->EnableWindow(FALSE);
 	GetDlgItem(IDC_CHECK_CLIENT_SEND)->EnableWindow(FALSE);
+
 	((CButton*)GetDlgItem(IDC_CHECK_MAGNETIC_VALVE_SHOW))->SetCheck(false);
 
 
