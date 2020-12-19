@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F327E49A-4844-4D69-8826-FDC683C02D6D}</ProjectGuid>
+    <RootNamespace>FiberDetectControl</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\aqrose\02AIDI Develop\二次开发\二次开发资料\335\jsoncpp\include;F:\aqrose工程\01经纬嵌入开发\软件开发\DataSimulator\asio;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include;F:\AIDI\aidi_libs\protobuf-3.5.1\include;F:\AIDI\发布文档\二次开发\aidi_vision_410\include;$(IncludePath)</IncludePath>
+    <ReferencePath>D:\aqrose\02AIDI Develop\二次开发\二次开发资料\335\jsoncpp\build\Debug\x64;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\build\Debug\x64;F:\AIDI\aidi_libs\protobuf-3.5.1\build\Debug\x64;F:\AIDI\发布文档\二次开发\aidi_vision_410\Build\Debug\x64;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>F:\aqrose工程\01经纬嵌入开发\软件开发\DataSimulator\asio;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include\opencv;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\include\opencv2;D:\aqrose\02AIDI Develop\二次开发\二次开发资料\335\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/D _CRT_SECURE_NO_WARNINGS  /wd4146 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\20200620\jsoncpp\jsoncpp-vs2013\buildDebug\x64;F:\AIDI\aidi_libs\335\opencv3.3.0.0.1\build\Debug\x64;D:\aqrose\02AIDI Develop\二次开发\二次开发资料\335\jsoncpp\build\Debug\x64;F:\AIDI\aidi_libs\protobuf-3.5.1\build\Debug\x64;F:\AIDI\发布文档\二次开发\aidi_vision_410\Build\Debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world300d.lib;json_cpp_dll.lib;winmm.lib;libprotobufd.lib;libaidi_vision410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseDetectParametersSetting.h" />
+    <ClInclude Include="BoxSelect.h" />
+    <ClInclude Include="CameraParametersSetting.h" />
+    <ClInclude Include="CameraSettingDlg.h" />
+    <ClInclude Include="Clog.h" />
+    <ClInclude Include="communicator.h" />
+    <ClInclude Include="DebugParametersSetting.h" />
+    <ClInclude Include="DetectParametersSetting.h" />
+    <ClInclude Include="detect_recog.h" />
+    <ClInclude Include="DlgGetTrainImage.h" />
+    <ClInclude Include="FiberDetectControl.h" />
+    <ClInclude Include="FiberDetectControlDlg.h" />
+    <ClInclude Include="FiberDetectParametersSettting.h" />
+    <ClInclude Include="label.pb.h" />
+    <ClInclude Include="MagneticValve.h" />
+    <ClInclude Include="MeasureResultDlg.h" />
+    <ClInclude Include="ModeSelectDlg.h" />
+    <ClInclude Include="NetSetting.h" />
+    <ClInclude Include="NetWorkParameters.h" />
+    <ClInclude Include="ParameterSetting.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SaveDetectResult.h" />
+    <ClInclude Include="Scope.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ValveParametersSetting.h" />
+    <ClInclude Include="VAsyncIO.h" />
+    <ClInclude Include="VCameraCoreApi.h" />
+    <ClInclude Include="VCameraEnum.h" />
+    <ClInclude Include="VCameraEnumPrivate.h" />
+    <ClInclude Include="VCameraFrame.h" />
+    <ClInclude Include="VCameraMessage.h" />
+    <ClInclude Include="VCameraMessagePrivate.h" />
+    <ClInclude Include="VCameraMessageTrans.h" />
+    <ClInclude Include="VCameraProcessorApi.h" />
+    <ClInclude Include="VCameraProcessorTypes.h" />
+    <ClInclude Include="VCameraSession.h" />
+    <ClInclude Include="VFC.h" />
+    <ClInclude Include="VTx2Session.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseDetectParametersSetting.cpp" />
+    <ClCompile Include="BoxSelect.cpp" />
+    <ClCompile Include="CameraParametersSetting.cpp" />
+    <ClCompile Include="CameraSettingDlg.cpp" />
+    <ClCompile Include="Clog.cpp" />
+    <ClCompile Include="communicator.cpp" />
+    <ClCompile Include="DebugParametersSetting.cpp" />
+    <ClCompile Include="DetectParametersSetting.cpp" />
+    <ClCompile Include="detect_recog.cpp" />
+    <ClCompile Include="DlgGetTrainImage.cpp" />
+    <ClCompile Include="FiberDetectControl.cpp" />
+    <ClCompile Include="FiberDetectControlDlg.cpp" />
+    <ClCompile Include="FiberDetectParametersSettting.cpp" />
+    <ClCompile Include="label.pb.cc" />
+    <ClCompile Include="MagneticValve.cpp" />
+    <ClCompile Include="MeasureResultDlg.cpp" />
+    <ClCompile Include="ModeSelectDlg.cpp" />
+    <ClCompile Include="NetSetting.cpp" />
+    <ClCompile Include="NetWorkParameters.cpp" />
+    <ClCompile Include="ParameterSetting.cpp" />
+    <ClCompile Include="SaveDetectResult.cpp" />
+    <ClCompile Include="Scope.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ValveParametersSetting.cpp" />
+    <ClCompile Include="VCameraFrame.cpp" />
+    <ClCompile Include="VCameraMessage.cpp" />
+    <ClCompile Include="VCameraMessageTrans.cpp" />
+    <ClCompile Include="VCameraProcessorTypes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FiberDetectControl.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\FiberDetectControl.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\FiberDetectControl.ico" />
+    <Image Include="res\Title.bmp" />
+    <Image Include="res\Track.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="FiberDetectControl.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

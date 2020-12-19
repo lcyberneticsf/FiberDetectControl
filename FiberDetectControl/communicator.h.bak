@@ -1,0 +1,124 @@
+#ifndef COMMUNICATOR_H
+#define COMMUNICATOR_H
+#include "VAsyncIO.h"
+#include <queue>
+#include <mutex>
+#include "VTx2Session.h"
+#include "VCameraMessageTrans.h"
+#include "Clog.h"
+using namespace asio::ip;
+
+
+
+namespace asio {
+	class io_service;
+	class VTx2Session;
+	namespace ip {
+		class tcp;
+		template <typename InternetProtocol>
+		class basic_endpoint;
+	}
+	template <typename Protocol>
+	class stream_socket_service;
+	template <typename Protocol,
+		typename StreamSocketService = stream_socket_service<Protocol> >
+	class basic_stream_socket;
+}
+
+namespace Vsee{
+	class VCameraFrame;
+}
+
+namespace aq {
+
+class Communicator;
+
+enum CMD
+{
+    SEND_RESULTS   = 71,
+    START_RECV_IMG = 1,
+    STOP_RECV_IMG  = 2
+};
+
+enum RESULT_STATE
+{
+    NO         = 0,
+    OK         = 1,
+    V_WRINKLED = 2,
+    WRINKLED   = 3,
+    V_DEFORMED = 4,
+    DEFORMED   = 5
+};
+
+class Communicator
+{
+private:
+    static std::vector<std::string> split(std::string str, char seg);
+    static void print_hex(unsigned char *_buf,int _len);
+public:
+    Communicator();
+
+    bool tcp_connect(std::string _ip, int _port, std::string& _error_str);
+
+    bool receive_img(std::string& _error_str);
+	bool receive_img(std::string &_error_str, asio::basic_stream_socket<asio::ip::tcp>* socket);
+	bool receive_img(std::string &_error_str, asio::basic_stream_socket<asio::ip::tcp>* socket, std::string &data_buffer_);
+    bool send_cmd(CMD _cmd, std::string& _error_str, std::vector<int> _state = std::vector<int>(), int _sequence = -1);
+
+	bool server(std::string _ip, int _port, std::string &_error_str);
+	bool img_show_server(std::string _ip, int _port, std::string &_error_str);
+	bool img_show_server1(std::string _ip, int _port, std::string &_error_str);
+	bool server_run(asio::basic_stream_socket<asio::ip::tcp>* socket_, std::string _ip, int _port, std::string &_error_str);
+	bool server_get_image_run(asio::basic_stream_socket<asio::ip::tcp>* socket, std::string _ip, int _port, std::string& _error_str);
+	bool get_file_list(std::string file_load_path);
+	int		get_files(std::string fileFolderPath, std::string fileExtension, int& nFileNum);
+	bool run_tcp_connect(std::string _ip, int _port);
+	bool tcp_connect_thread(std::string _ip, int _port);
+
+	int     udp_send_server(std::string _ip, int _port);
+	int		udp_send_client(std::string _ip, int _port);
+
+
+	std::queue<Vsee::VCameraFrame>* frame_queue_;
+	std::mutex m_;
+
+//private:
+public:
+	asio::io_service* io_service_;
+	asio::io_service* img_io_service_;
+	//asio::ip::basic_endpoint<asio::ip::tcp>* ep_;
+	tcp::endpoint  * ep_;
+	tcp::endpoint  * img_ep_;
+	asio::basic_stream_socket<asio::ip::tcp>* socket_;
+	asio::basic_stream_socket<asio::ip::tcp>* img_socket_;
+	std::string data_buffer_;
+	asio::ip::tcp::socket* _socket;
+
+	//asio::tcp::acceptor acceptor_;
+
+	Vsee::VTx2Session* sessions[8];
+	tcp::socket* sockets[8];
+	asio::io_service* ios[8];
+	std::queue<Vsee::InferFrame> infer_queue;
+	std::mutex             infer_mutex;
+	Vsee::InferFrame infer_frame;
+	tcp::endpoint eps[8];
+	std::vector<std::string> file_list;
+	int file_amount;
+	static bool batch_image_load;
+	static bool single_image_load;
+	static bool    m_bServerSendMode;
+	static bool    m_bClientSendMode;
+	static bool		m_bServerRun;
+	static bool		m_bClientRun;
+	int		counter;
+	int		camera_scan_speed;
+	static  Vsee::VCameraMessageTrans  box_ctrl_msg;
+	static CLog	m_Log;
+	static std::mutex mutex_magnetic_valve;
+	static  Vsee::VCameraMessageTrans*  valve_ctrl_msg;
+};
+
+}
+
+#endif // COMMUNICATOR_H

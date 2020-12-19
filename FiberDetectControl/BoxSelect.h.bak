@@ -1,0 +1,23 @@
+#pragma once
+
+
+// CBoxSelect 对话框
+
+class CBoxSelect : public CDialogEx
+{
+	DECLARE_DYNAMIC(CBoxSelect)
+
+public:
+	CBoxSelect(CWnd* pParent = NULL);   // 标准构造函数
+	virtual ~CBoxSelect();
+
+// 对话框数据
+	enum { IDD = IDD_DIALOG_BOX_CHOOSE };
+
+protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
+
+	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedButtonBoxSelect();
+};
